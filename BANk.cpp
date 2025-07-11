@@ -4,15 +4,6 @@
 #include <algorithm>
 using namespace std;
 
-//----- Welcome to ABC Bank -----
-// 1. Create Account
-// 2. Deposit Money
-// 3. Withdraw Money
-// 4. Check Balance
-// 5. Display Account Details
-// 6. Exit
-// Enter your choice:
-
 class Bank_acc
 {
 private:
@@ -21,12 +12,12 @@ private:
     int acc_num, age, withdraw, deposit, credit, balance = 0;
 
 public:
-    void create_acc(void);     // hogya
-    void deposit_money(void);  // hogya
-    void credit_money(void);   // hogya
-    void check_balance(void);  // hogya
-    void withdraw_money(void); // hogya
-    void display_acc(void);    // hogya
+    void create_acc(void);
+    void deposit_money(void);
+    void credit_money(void);
+    void check_balance(void);
+    void withdraw_money(void);
+    void display_acc(void);
     int getAccNum();
     bool verify(int entered_acc, int entered_pin);
 };
@@ -91,7 +82,7 @@ void Bank_acc::create_acc(void)
     cout << "\nCongratulations! Your account is created on SBI Bank of India.\n\n";
 }
 
-// Deposit
+// Deposit Money
 void Bank_acc::deposit_money(void)
 {
     int entered_acc, entered_pin, amount;
@@ -115,7 +106,7 @@ void Bank_acc::deposit_money(void)
     }
 }
 
-// Credit
+// Credit Money
 void Bank_acc::credit_money(void)
 {
     int entered_acc, entered_pin, amount;
@@ -162,7 +153,7 @@ void Bank_acc::check_balance(void)
     }
 }
 
-// withdraw
+// Withdraw Function
 void Bank_acc::withdraw_money(void)
 {
     int entered_acc, entered_pin, amount;
@@ -191,7 +182,7 @@ void Bank_acc::withdraw_money(void)
     }
 }
 
-// Display details
+// User Display details 
 void Bank_acc::display_acc(void)
 {
     int entered_acc, entered_pin;
